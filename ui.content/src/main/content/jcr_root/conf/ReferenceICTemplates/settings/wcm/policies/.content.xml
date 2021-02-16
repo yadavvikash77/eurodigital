@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <fd jcr:primaryType="nt:unstructured">
+        <ccm jcr:primaryType="nt:unstructured">
+            <web-channel jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <page jcr:primaryType="nt:unstructured">
+                        <v1 jcr:primaryType="nt:unstructured">
+                            <base jcr:primaryType="nt:unstructured">
+                                <jcr:content
+                                    jcr:primaryType="nt:unstructured"
+                                    mergeList="{Boolean}true"/>
+                                <default
+                                    jcr:description="Policy of the Interactive Communication page"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Default Page"
+                                    sling:resourceType="wcm/core/components/policy/policy"
+                                    clientlibs="[wcm.foundation.components.page.responsive]">
+                                    <jcr:content
+                                        jcr:primaryType="nt:unstructured"
+                                        mergeList="{Boolean}true"/>
+                                </default>
+                            </base>
+                        </v1>
+                    </page>
+                    <documentContainer jcr:primaryType="nt:unstructured">
+                        <v1 jcr:primaryType="nt:unstructured">
+                            <documentContainer jcr:primaryType="nt:unstructured">
+                                <jcr:content
+                                    jcr:primaryType="nt:unstructured"
+                                    mergeList="{Boolean}true"/>
+                                <default
+                                    jcr:description="Policy of the Interactive Communication Container"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Simple Interactive Communication Container Policy"
+                                    sling:resourceType="wcm/core/components/policy/policy"
+                                    components="[/libs/fd/af/components/guideheader,/libs/fd/af/components/guidefooter,/libs/fd/af/components/guideseparator,/libs/fd/af/components/guidebutton,group:Interactive Communication]">
+                                    <cq:authoring jcr:primaryType="nt:unstructured">
+                                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="media"
+                                                assetMimetype="image/*"
+                                                droptarget="image"
+                                                resourceType="fd/ccm/web-channel/components/image/v1/image"
+                                                type="Images"/>
+                                            <product
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="product"
+                                                droptarget="product-data-reference"
+                                                resourceType="commerce/components/product"
+                                                type="Products"/>
+                                            <document
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="media"
+                                                assetMimetype="[application/vnd.openxmlformats,application/msword,application/vnd.ms-powerpoint,application/mspowerpoint,application/powerpoint,application/x-mspowerpoint,application/x-msexcel,application/x-excel,application/excel,application/vnd.ms-excel,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document]"
+                                                droptarget="file"
+                                                resourceType="foundation/components/download"
+                                                type="Images"/>
+                                            <video
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="media"
+                                                assetMimetype="video/*"
+                                                droptarget="video"
+                                                resourceType="foundation/components/video"
+                                                type="Images"/>
+                                            <fragment
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="media"
+                                                assetMimetype="text/html"
+                                                droptarget="fragment"
+                                                resourceType="dam/cfm/components/contentfragment"
+                                                type="Content Fragment"/>
+                                            <experiencefragment
+                                                jcr:primaryType="nt:unstructured"
+                                                assetGroup="content"
+                                                assetMimetype="text/html"
+                                                droptarget="experiencefragment"
+                                                resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                                                type="experiencefragment"/>
+                                        </assetToComponentMapping>
+                                    </cq:authoring>
+                                    <jcr:content
+                                        jcr:primaryType="nt:unstructured"
+                                        mergeList="{Boolean}true"/>
+                                </default>
+                            </documentContainer>
+                        </v1>
+                    </documentContainer>
+                    <documentFragmentGroup jcr:primaryType="nt:unstructured">
+                        <v1 jcr:primaryType="nt:unstructured">
+                            <documentFragmentGroup jcr:primaryType="nt:unstructured">
+                                <jcr:content
+                                    jcr:primaryType="nt:unstructured"
+                                    mergeList="{Boolean}true"/>
+                                <default
+                                    jcr:description="Policy of the Document Fragment Group"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Simple Document Fragment Group Policy"
+                                    sling:resourceType="wcm/core/components/policy/policy"
+                                    components="[/libs/fd/ccm/web-channel/components/documentFragment/v1/documentFragment,/libs/fd/ccm/web-channel/components/image/v1/image,/libs/fd/ccm/web-channel/components/chart/v1/chart]">
+                                    <jcr:content
+                                        jcr:primaryType="nt:unstructured"
+                                        mergeList="{Boolean}true"/>
+                                </default>
+                            </documentFragmentGroup>
+                        </v1>
+                    </documentFragmentGroup>
+                </components>
+            </web-channel>
+        </ccm>
+    </fd>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <jcr:content
+                        jcr:primaryType="nt:unstructured"
+                        mergeList="{Boolean}true"/>
+                    <adpolicy
+                        jcr:description="Policy of the Interactive Communication"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Interactive Communication Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,/libs/fd/af/components/guideheader,/libs/fd/af/components/guidefooter,/libs/fd/af/components/guideimage,/libs/fd/af/components/guidetextdraw,/libs/fd/af/components/afFormTitle,group:Interactive Communication]">
+                        <cq:authoring jcr:primaryType="nt:unstructured">
+                            <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="image/*"
+                                    droptarget="image"
+                                    resourceType="foundation/components/image"
+                                    type="Images"/>
+                                <product
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="product"
+                                    droptarget="product-data-reference"
+                                    resourceType="commerce/components/product"
+                                    type="Products"/>
+                                <document
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="[application/vnd.openxmlformats,application/msword,application/vnd.ms-powerpoint,application/mspowerpoint,application/powerpoint,application/x-mspowerpoint,application/x-msexcel,application/x-excel,application/excel,application/vnd.ms-excel,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document]"
+                                    droptarget="file"
+                                    resourceType="foundation/components/download"
+                                    type="Images"/>
+                                <video
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="video/*"
+                                    droptarget="video"
+                                    resourceType="foundation/components/video"
+                                    type="Images"/>
+                                <fragment
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="text/html"
+                                    droptarget="fragment"
+                                    resourceType="dam/cfm/components/contentfragment"
+                                    type="Content Fragment"/>
+                            </assetToComponentMapping>
+                        </cq:authoring>
+                        <jcr:content
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </adpolicy>
+                    <policy_1519382656352
+                        jcr:lastModified="{Date}2018-02-23T16:17:49.868+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Reference Web Channel Header Footer Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/fd/af/components/guidefooter,/libs/fd/af/components/guideheader]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1519382656352>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+</jcr:root>

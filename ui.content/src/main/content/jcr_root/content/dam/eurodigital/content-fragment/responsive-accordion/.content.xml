@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="354f0872-cc18-48da-8a79-57ba67327a66">
+    <jcr:content
+        cq:name="responsive-accordion"
+        cq:parentPath="/content/dam/eurodigital/content-fragment"
+        dam:assetState="processed"
+        jcr:description="This is responsive accordion content fragment"
+        jcr:lastModified="{Date}2020-11-13T16:56:06.053+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Responsive Accordion"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-11-13T12:34:28.880+05:30">
+        <associated
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sling/collection">
+            <sling:members
+                jcr:primaryType="nt:unstructured"
+                sling:resources="[/content/dam/collections/public/g/gizpw0zzR068tWNUXi90/euro_digital_collection]">
+                <euro_digital_collection
+                    jcr:primaryType="nt:unstructured"
+                    sling:resource="/content/dam/collections/public/g/gizpw0zzR068tWNUXi90/euro_digital_collection"/>
+            </sling:members>
+        </associated>
+        <metadata
+            dam:extracted="{Date}2020-11-13T16:55:59.571+05:30"
+            dam:sha1="c81f58fd3ce75a479c75251f5971d0578daac093"
+            dam:size="{Long}915"
+            dc:format="text/html"
+            dc:modified="{Date}2020-11-13T16:56:06.053+05:30"
+            jcr:lastModified="{Date}2020-11-13T16:56:06.053+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model
+            jcr:description="A simple fragment, containing one single element and no predefined variations"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Simple Fragment"
+            precreateElements="{Boolean}true"
+            version="{Long}2">
+            <elements jcr:primaryType="nt:unstructured">
+                <main
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Main"
+                    defaultContent=""
+                    name="main"/>
+            </elements>
+            <variations jcr:primaryType="nt:unstructured">
+                <desktop
+                    jcr:description="Desktop Variation"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Desktop"
+                    name="desktop">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[main:d1dc197e-b72f-4fc5-a146-f781b433860c]"/>
+                </desktop>
+                <tablet
+                    jcr:description="Tablet Variation"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tablet"
+                    name="tablet">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[main:38261cab-e7ca-4760-a824-1bbf75e5740a]"/>
+                </tablet>
+                <mobile
+                    jcr:description="Mobile Variation"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Mobile"
+                    name="mobile">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[main:dd053a36-0f00-4338-ad59-bb69f8ebcebb]"/>
+                </mobile>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+        <usages
+            dam:score="{Long}1"
+            jcr:primaryType="nt:unstructured"
+            usedBy="[asset]">
+            <asset
+                jcr:primaryType="nt:unstructured"
+                count="{Long}1"
+                lastUsed="{Date}2020-11-13T12:41:01.508+05:30"/>
+        </usages>
+    </jcr:content>
+</jcr:root>

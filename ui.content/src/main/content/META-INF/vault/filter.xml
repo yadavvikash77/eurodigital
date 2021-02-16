@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/eurodigital" mode="merge"/>
+    <filter root="/content/eurodigital" mode="merge"/>
+    <filter root="/content/dam/eurodigital" mode="merge"/>
+    <filter root="/content/experience-fragments/eurodigital" mode="merge"/>
+</workspaceFilter>

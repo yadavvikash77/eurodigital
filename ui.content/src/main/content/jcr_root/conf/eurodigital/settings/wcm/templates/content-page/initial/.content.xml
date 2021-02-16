@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-17T16:52:39.405+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/eurodigital/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="eurodigital/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2016-09-20T20:35:34.244+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-09-20T20:35:53.900+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <carousel
+                    jcr:created="{Date}2020-11-15T21:03:47.764+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-15T21:03:47.764+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/carousel"/>
+                <accordion
+                    jcr:created="{Date}2020-11-15T21:04:03.278+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-15T21:04:03.278+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/accordion"/>
+                <corona
+                    jcr:created="{Date}2020-11-17T16:52:39.396+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-17T16:52:39.396+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/corona"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,20 @@
+<h1>Corona Tracker Timeline - Germany (in Publish mode only)</h1>
+<sly data-sly-test="${wcmmode.disabled}" data-sly-use.corona="com.euro.digital.core.models.CoronaModel">
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Count</th>
+            <th>Status</th>
+        </tr>
+        <sly data-sly-test="${corona}" data-sly-list.map="${corona.contentList}">
+            <tr>
+                <td>${map.date}</td>
+                <td>${map.count}</td>
+                <td>${map.status}</td>
+            </tr>
+        </sly>
+    </table>
+</sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+    <sly data-sly-call="${templates.placeholder @ isEmpty = true}"></sly>
+</sly>

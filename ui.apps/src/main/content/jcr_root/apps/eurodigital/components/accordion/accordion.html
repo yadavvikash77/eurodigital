@@ -1,0 +1,37 @@
+<section id="team" class="team circle-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="team-box">
+                    <form>
+                        <ul>
+                            <sly data-sly-use.childSlides="com.euro.digital.core.models.AccordionModel">
+                                <sly data-sly-test="${childSlides}" data-sly-list.map="${childSlides.slideList}">
+                                <li>
+                                   <input id="rad${mapList.count}" type="radio" checked="${mapList.index ==0 ? 'checked':''}" name="rad">
+                                      <label for="rad${mapList.count}"><span class="team-name text-white">${map.slideLabel}</span></label>
+                                      <div class="accslide ${mapList.index ==0 ? 'd-flex':''}">
+                                          <div class="team-inner">
+                                              <div class="team-about">
+                                                  ${map.fragmentContent @ context='html'}
+                                                  <span class="hr-line ml-0 mt-4 mb-4"></span>
+                                                  <a href="#." class="btn btn-danger">${map.btnLabel}</a>
+                                              </div>
+                                              <div class="team-img">
+                                                  <img src="${map.slideImage @ context='uri'}?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="team-img" id="slideImage${mapList.count}">
+                                              </div>
+                                          </div>
+                                      </div>
+                                </li>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+	<sly data-sly-call="${templates.placeholder @ isEmpty = true}"></sly>
+</sly>

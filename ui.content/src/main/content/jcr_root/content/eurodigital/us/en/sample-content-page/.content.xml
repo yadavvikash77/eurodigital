@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-17T13:30:09.743+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/eurodigital/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sample Content Page"
+        sling:resourceType="eurodigital/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2016-09-20T20:35:34.244+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-09-20T20:35:53.900+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <carousel
+                    jcr:created="{Date}2020-11-15T15:41:19.193+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-16T19:22:33.283+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/carousel">
+                    <carouselTiles jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            tileImage="/content/dam/eurodigital/carousel/Sannenzaka.jpg"
+                            tileLabel="Sannenzaka"
+                            tileLink="https://unsplash.com/photos/Xq1ntWruZQI"
+                            tileTab="_blank"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            tileImage="/content/dam/eurodigital/carousel/Ishiyama-dera.jpg"
+                            tileLabel="Ishiyama-dera"
+                            tileLink="https://unsplash.com/photos/7IO8Uei5TzA"
+                            tileTab="_blank"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            tileImage="/content/dam/eurodigital/carousel/Fushimi Inari.jpg"
+                            tileLabel="Fushimi Inari"
+                            tileLink="https://unsplash.com/photos/x-8JcrlWmhM"
+                            tileTab="_blank"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            tileImage="/content/dam/eurodigital/carousel/Downtown.jpg"
+                            tileLabel="Downtown"
+                            tileLink="https://unsplash.com/photos/o7A3FM8txAE"
+                            tileTab="_blank"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            tileImage="/content/dam/eurodigital/carousel/346c4c9073be5d94887f2db0a6cf3f4f.png"
+                            tileLabel="Nono Umasi - Concept Creator"
+                            tileLink="https://dribbble.com/shots/13869975-Kyoto-Highlights-Slideshow-Component"
+                            tileTab="_blank"/>
+                    </carouselTiles>
+                </carousel>
+                <accordion
+                    jcr:created="{Date}2020-11-16T17:08:06.368+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-16T19:31:26.462+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/accordion">
+                    <slides jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            btnLabel="Read More"
+                            fragmentPath="/content/dam/eurodigital/content-fragment/responsive-accordion"
+                            slideImage="/content/dam/eurodigital/accordion/pexels-photo-2191136.jpeg"
+                            slideLabel="RESPONSIVE ACCORDION"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            btnLabel="Read More"
+                            fragmentPath="/content/dam/eurodigital/content-fragment/image-sliding"
+                            slideImage="/content/dam/eurodigital/accordion/pexels-photo-1095826.jpeg"
+                            slideLabel="WITH IMAGE SLIDING"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            btnLabel="Read More"
+                            fragmentPath="/content/dam/eurodigital/content-fragment/responsive-accordion"
+                            slideImage="/content/dam/eurodigital/accordion/pexels-photo-2083246.jpeg"
+                            slideLabel="LEARN TODAY"/>
+                    </slides>
+                </accordion>
+                <corona
+                    jcr:created="{Date}2020-11-17T13:17:03.189+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-11-17T13:30:09.741+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eurodigital/components/corona"
+                    covidContentPath="/content/eurodigital/jcr:content"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
